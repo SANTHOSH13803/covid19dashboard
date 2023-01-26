@@ -1,0 +1,235 @@
+.body-bg {
+  background-color: #161625;
+  margin: 0;
+}
+
+.home-body {
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-content: center;
+  background-color: #2f2f43;
+  border-radius: 5px;
+  padding: 10px;
+}
+.search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #94a3b8;
+  max-width: 300px;
+}
+
+.search-container svg {
+  color: #94a3bb;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.total-cases-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 20px 0px;
+  gap: 4rem;
+}
+
+.total-cases-details li {
+  list-style: none;
+  margin: 20px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total-cases-details li img {
+  width: 50px;
+}
+
+.total-cases-details li:nth-child(1),
+.other-states p:nth-child(2),
+.confirmed-text {
+  color: #ff073a;
+}
+.total-cases-details li:nth-child(2),
+.other-states p:nth-child(3),
+.active-text {
+  color: #007bff;
+}
+.total-cases-details li:nth-child(3),
+.other-states p:nth-child(4),
+.recovered-text {
+  color: #28a745;
+}
+.total-cases-details li:nth-child(4),
+.other-states p:nth-child(5),
+.deceased-text {
+  color: #6c757d;
+}
+.total-cases-details li p:nth-child(1) {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.total-cases-details li p:last-child {
+  letter-spacing: 2px;
+  font-size: large;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+.search-results {
+  padding: 0;
+  background-color: transparent;
+}
+.search-results li {
+  list-style: none;
+}
+.search-results li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 50px;
+  padding: 0px 9px;
+  border-bottom: 1px solid #94a3b8;
+  gap: 1rem;
+}
+
+.search-results li p {
+  color: #64748b;
+}
+.search-results li button {
+  cursor: pointer;
+  background: rgba(28, 212, 212, 0.16);
+  border-radius: 4px;
+  border: none;
+  font-family: 'HK Grotesk';
+  color: #facc15;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-results li button svg {
+  margin-left: 5px;
+}
+
+.search-results li:hover {
+  border: 2px solid #94a3b8;
+  background-color: #1f1f30;
+}
+
+.states-list-details {
+  overflow-x: scroll;
+  padding: 0;
+  width: 80vw;
+  border-radius: 4px;
+  border: 1px solid #475569;
+  margin: 30px 0 0 0;
+}
+/* .states-list-details::-webkit-scrollbar {
+  display: none;
+} */
+.states-list-details li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: fit-content;
+  /* margin: 20px; */
+}
+.states-list-details li:nth-child(1) {
+  border-bottom: 1px solid #475569;
+  padding: 10px;
+}
+.box-head p {
+  white-space: nowrap;
+}
+
+.states-list-details li:nth-child(1) p {
+  color: #f1f5f9;
+  font-weight: 500;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.other-states p {
+  width: 200px;
+  margin: 0px 10px;
+  text-align: center;
+}
+.other-states p:nth-child(1) {
+  color: #f1f5f9;
+  text-align: left;
+}
+.states-list-details li:nth-child(1) p button {
+  border: none;
+  background-color: transparent;
+}
+#states1 button {
+  color: #64748b !important;
+}
+.states-list-details li:nth-child(1) p button svg {
+  font-size: 20px;
+}
+.home-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.other-states p:nth-child(6) {
+  color: #94a3b8;
+}
+
+.home-loader {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .home-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-container {
+    width: 700px;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+  }
+  .search-results {
+    width: 600px;
+  }
+  .search-container input {
+    font-size: large;
+  }
+  .search-container svg {
+    font-size: 20px;
+  }
+  .total-cases-details li {
+    margin: 10px 60px;
+  }
+  .total-cases-details li img {
+    width: 80px;
+  }
+  .total-cases-details li p:nth-child(1) {
+    font-size: large;
+  }
+  .total-cases-details li p:last-child {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .states-list-details {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,38 @@
+.footer {
+  margin: 100px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #161625;
+  margin: 0;
+}
+
+.footer p {
+  color: #94a3b8;
+  margin: 20px 0px;
+}
+
+.footer .logo {
+  font-size: 25px;
+}
+
+.footer .icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer .icons a {
+  padding: 10px 20px;
+}
+
+.footer .icons a svg {
+  color: #cbd5e1;
+  font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 15px;
+  }
+}

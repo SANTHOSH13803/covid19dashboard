@@ -1,0 +1,79 @@
+* {
+  font-family: 'Roboto';
+}
+.about-page {
+  min-height: 100vh;
+  margin: 40px;
+}
+.about-page h1 {
+  color: #f8fafc;
+  font-size: 48px;
+  font-weight: 500;
+}
+.updated-date-text {
+  color: #94a3b8;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 12px 0 32px 0px;
+}
+
+.h-2 {
+  color: #e2e8f0;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.faqs {
+  padding: 0;
+}
+.faqs li {
+  list-style: none;
+  margin: 30px 0px;
+}
+
+.faqs li .que {
+  color: #94a3b8;
+  font-size: large;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.faqs li .ans {
+  color: #007bff;
+  margin-top: 12px;
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 35px;
+  font-weight: 500;
+}
+.slick-container {
+  height: 100px;
+  margin: 10px 0 50px 0;
+}
+.banner {
+  text-align: center;
+  font-size: larger;
+}
+.banner p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #e2e8f0;
+
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .about-page {
+    padding: 10px;
+  }
+  .faqs li .que {
+    font-size: 20px;
+  }
+  .faqs li .ans {
+    font-size: 20px;
+  }
+}

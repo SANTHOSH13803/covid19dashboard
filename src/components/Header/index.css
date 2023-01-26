@@ -1,0 +1,109 @@
+.navbar {
+  background-color: #1e1e30;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  color: #f8fafc;
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.logo span {
+  color: #3b82f6;
+}
+
+.small-menu {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 56px;
+  padding: 20px;
+  background-color: #161625;
+}
+.menu-btn {
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu-btn svg {
+  color: white;
+}
+
+.menu-links {
+  display: flex;
+  padding: 0;
+  position: relative;
+}
+
+.menu-links li {
+  margin: 20px;
+  list-style: none;
+  color: #94a3b8;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu-links li a {
+  background-image: linear-gradient(
+    90deg,
+    rgb(215, 197, 197),
+    rgb(195, 195, 226)
+  );
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease, font-weight 200ms ease-in-out;
+  padding-bottom: 5px;
+}
+
+.menu-links li:hover a {
+  background-size: 100% 3px;
+  font-weight: 700;
+}
+
+.small-menu div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-btn svg {
+  color: white;
+}
+.large-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+  .large-menu {
+    display: flex;
+    margin-right: 50px;
+  }
+  .navbar .logo {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .menu-links li {
+    font-size: 20px;
+  }
+}
